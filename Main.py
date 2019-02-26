@@ -1,29 +1,18 @@
-# print("Hello")
-StrLine = input()
-A = int(StrLine.split()[0])
-B = int(StrLine.split()[1])
-Sum = A + B
-# print(Sum)
+class PolyNode:  # 多项式节点
+    pass
 
-bNonNegative = (A+B >= 0)
-# print(bNonNegative)
 
-StrSum = str(abs(Sum))
-# print(StrSum)
+def do_input():
+    pass
 
-StrAns = ""
-CountFromRight = 0
-for i in range(len(StrSum) - 1, -1, -1):
-    # print(i)
 
-    if CountFromRight % 3 == 0 and CountFromRight != 0:
-        StrAns = "," + StrAns
-    StrAns = StrSum[i] + StrAns
-    CountFromRight += 1
+def do_output():
+    pass
 
-if not bNonNegative:
-    StrAns = "-" + StrAns
-print(StrAns)
+
+do_input()
+
+do_output()
 
 
 
